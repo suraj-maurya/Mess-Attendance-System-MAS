@@ -9,8 +9,8 @@
  #include <LiquidCrystal_I2C.h>.
 
 // Fingerprint for demo URL, expires on ....., needs to be updated well before this date
-const uint8_t fingerprint[20] = {0x25, 0x36, 0xC1, 0x2F, 0x11, 0xC0, 0x8D, 0x64, 0x42, 0x51, 0x0A, 0x96, 0x50, 0xCA, 0x72, 0x2E, 0xDC, 0xE9, 0x8F, 0x22};
-//25 36 C1 2F 11 C0 8D 64 42 51 0A 96 50 CA 72 2E DC E9 8F 22
+const uint8_t fingerprint[20] = {...Enter authentication key};
+//25 36 C1 2F 11 C0 8D 64 42 57 0A 96 50 CP 72 2E DC E9 8F 22
 
 #define RST_PIN  D3     // Configurable, see typical pin layout above
 #define SS_PIN   D4     // Configurable, see typical pin layout above
@@ -32,7 +32,7 @@ byte readBlockData[18];
 String data2;
 String MessCode;
 String Lcdmessage;
-const String data1 = "https://script.google.com/macros/s/AKfycbwUvm1FKtZ1Ry4gT6_sqTkVCZZIN2rFlQVYOMy0iNGN_G05Fk-QNsMj8nZravgL-XIB/exec?MessCode=";
+const String data1 = "https://script.google.com/macros/s/AK.....";
 
 //LCD command--------------------------------
 LiquidCrystal_I2C lcd(0x27, 20, 4); 
