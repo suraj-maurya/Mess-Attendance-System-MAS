@@ -57,7 +57,7 @@ void setup()
   WiFi.mode(WIFI_STA);
   
   /* Put your WIFI Name and Password here */
-  WiFiMulti.addAP("Suraj", "Wifi0101");
+  WiFiMulti.addAP("Suraj", "...");
 
   /* Set BUZZER as OUTPUT */
   pinMode(BUZZER, OUTPUT);
